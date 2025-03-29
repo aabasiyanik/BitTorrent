@@ -3,7 +3,7 @@
 #include <openssl/sha.h>
 #include <sstream>
 #include <iomanip>
-// test
+
 TorrentFile::TorrentFile(const std::string& filename) {
     auto parsed = bencode::BencodeParser::parseFile(filename);
     if (!parsed->isDict()) {
